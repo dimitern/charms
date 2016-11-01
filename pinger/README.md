@@ -39,16 +39,16 @@ juju run --unit pinger/0 -- 'cat /var/lib/juju/agents/unit-pinger-0/charm/ping.l
 Deploy to a given machine (e.g. a MAAS node called 'node-42'), like this:
 
 ```
-juju deploy pinger --to node-42
+juju deploy cs:~dimitern/pinger --to node-42
 ```
 
 Instead of placement with --to, you can also use other criteria, like
 constraints and/or endpoint bindings:
 
 ```
-juju deploy pinger --constraints 'mem=4G tags=os-nodes'
+juju deploy cs:~dimitern/pinger --constraints 'mem=4G tags=os-nodes'
 # or e.g.
-juju deploy pinger --bind 'ep0=admin-api ep1=public-api'
+juju deploy cs:~dimitern/pinger --bind 'ep0=admin-api ep1=public-api'
 ```
 
 Add more units to new or existing machine, like this:
@@ -74,7 +74,7 @@ juju config pinger extra-targets='google.com 10.14.0.1 8.8.8.8'
 You can also do the same during deployment:
 
 ```
-juju deploy pinger --config=~/os-pinger-config.yaml
+juju deploy cs:~dimitern/pinger --config=~/os-pinger-config.yaml
 ```
 
 Where `~/os-pinger-config.yaml` is a path to a YAML configuration file. An
@@ -89,7 +89,7 @@ pinger:
 
 The following configuration settings are supported:
     
-    * `extra-targets`: a space-delimited list of IP addresses or hostnames to
+    * **extra-targets**: a space-delimited list of IP addresses or hostnames to
       check by each peer, in addition to all addresses of each peer. Empty by
       default.
 
@@ -98,6 +98,10 @@ The following configuration settings are supported:
 As of this writing, this layer does not define any actions.
 
 # Contact Information
+
+## Source
+
+(GitHub)[https://github.com/dimitern/charms/blob/master/pinger]
 
 ## Maintainer
 
