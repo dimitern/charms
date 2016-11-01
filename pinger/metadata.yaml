@@ -1,0 +1,28 @@
+name: pinger
+summary: Pinger is a simple network connectivity checker.
+description: |
+  Pinger can verify the network connectivity between its peer units and an
+  optional configured list of extra-targets. Uses status 'blocked' to signal
+  connectivity issues or status 'active' when all checks pass correctly.
+maintainers:
+    - Dimiter Naydenov <dimiter.naydenov@canonical.com>
+tags:
+    - network
+series:
+    - xenial
+    - trusty
+min-juju-version: 2.0.0
+peers:
+  peer:
+    interface: pingers
+extra-bindings:
+    ep0:
+    ep1:
+    ep2:
+    ep3:
+    ep4:
+    ep5:
+    ep6:
+    ep7:
+    ep8:
+    ep9:

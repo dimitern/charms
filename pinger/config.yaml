@@ -1,0 +1,7 @@
+options:
+  extra-targets:
+    type: string
+    default: ""
+    description: |
+      A space-delimited list of extra targets (IP addresses or hostnames)
+      to check in addition to peers' private addresses.
