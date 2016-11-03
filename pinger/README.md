@@ -14,7 +14,7 @@ minutes).
 
 After each peer unit performs its checks, a summary will be provided in the
 status of the Pinger application. For example, "active OK (all 42 reachable)"
-when no connectivity issues were found, or e.g. "blocked FAIL (1 or 42
+when no connectivity issues were found, or e.g. "blocked FAIL (1 of 42
 unreachable)".
 
 All checks and their results are logged. On failure, check the unit log:
@@ -89,9 +89,9 @@ pinger:
 
 The following configuration settings are supported:
     
-    * **extra-targets**: a space-delimited list of IP addresses or hostnames to
-      check by each peer, in addition to all addresses of each peer. Empty by
-      default.
+    **extra-targets** - a space-delimited list of IP addresses or hostnames to
+    check by each peer, in addition to all addresses of each peer. Empty by
+    default.
 
 ## Actions
 
@@ -101,8 +101,8 @@ As of this writing, this layer does not define any actions.
 
 ## Source
 
-(GitHub)[https://github.com/dimitern/charms/blob/master/pinger]
+GitHub: https://github.com/dimitern/charms/blob/master/pinger
 
 ## Maintainer
 
-- Dimiter Naydenov <dimiter.naydenov@canonical.com>
+- Dimiter Naydenov <dimiter@naydenov.net>

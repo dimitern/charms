@@ -5,7 +5,7 @@ description: |
   optional configured list of extra-targets. Uses status 'blocked' to signal
   connectivity issues or status 'active' when all checks pass correctly.
 maintainers:
-    - Dimiter Naydenov <dimiter.naydenov@canonical.com>
+    - Dimiter Naydenov <dimiter@naydenov.net>
 tags:
     - network
 series:
